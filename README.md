@@ -24,18 +24,19 @@ A full-stack application that modernizes warehouse operations by integrating wit
 
 ## 📂 Project Structure
 
+```text
 /warehouse-backend
 │── src/
-│ ├── config/ # QuickBooks API setup
-│ ├── controllers/ # Route controllers
-│ ├── routes/ # API endpoints
-│ ├── services/ # Business logic (QuickBooks, PDF, email)
-│ ├── models/ # Prisma schema & DB models
-│ ├── middleware/ # Error handling, auth
-│ └── app.ts # Express app entry
+│   ├── config/        # QuickBooks API setup
+│   ├── controllers/   # Route controllers
+│   ├── routes/        # API endpoints
+│   ├── services/      # Business logic (QuickBooks, PDF, email)
+│   ├── models/        # Prisma schema & DB models
+│   ├── middleware/    # Error handling, auth
+│   └── app.ts         # Express app entry
 /frontend
-│── src/ # React components (signature pad, dashboard)
-
+│── src/               # React components (signature pad, dashboard)
+```
 
 ---
 
@@ -49,14 +50,14 @@ cd warehouse-invoice-system
 cd warehouse-backend
 npm install
 cp .env.example .env   # Add QuickBooks API credentials & DB URL
-npm run dev
+npm run dev 
+```
 
-API Endpoints
+## 📡 API Endpoints
 
-GET /api/invoices → Fetch open invoices from QuickBooks
-
-GET /api/invoices/:id → Fetch single invoice details
-
-POST /api/invoices/:id/signature → Attach digital signature
-
-POST /api/invoices/:id/send → Email invoice to customer
+| Method | Endpoint                        | Description                                 |
+|--------|----------------------------------|---------------------------------------------|
+| GET    | `/api/invoices`                 | Fetch open invoices from QuickBooks         |
+| GET    | `/api/invoices/:id`             | Fetch single invoice details                |
+| POST   | `/api/invoices/:id/signature`   | Attach digital signature to an invoice      |
+| POST   | `/api/invoices/:id/send`        | Email signed invoice to customer            |
