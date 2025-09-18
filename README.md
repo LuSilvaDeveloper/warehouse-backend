@@ -40,19 +40,6 @@ A full-stack application that modernizes warehouse operations by integrating wit
 
 ---
 
-## ⚙️ Getting Started
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/YOUR_USERNAME/warehouse-invoice-system.git
-cd warehouse-invoice-system
-
-cd warehouse-backend
-npm install
-cp .env.example .env   # Add QuickBooks API credentials & DB URL
-npm run dev 
-```
-
 ## 📡 API Endpoints
 
 | Method | Endpoint                        | Description                                 |
