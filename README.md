@@ -6,11 +6,11 @@ A full-stack application that modernizes warehouse operations by integrating wit
 
 ## 🚀 Features
 - 📊 Fetch and display invoices from QuickBooks Online  
-- ✍️ Capture customer signatures digitally (React signature pad)  
+- ✍️ Capture customer signatures digitally
 - 📄 Attach signatures directly to QuickBooks invoices  
 - 📧 Send signed invoices to customers automatically  
-- 🗄️ Store signature records securely in a database (PostgreSQL)  
-- ⚡ Built with **Node.js + TypeScript** (backend) and **React** (frontend)  
+- 🗄️ Store signature records securely in a database  
+- ⚡ Built with **Node.js + TypeScript** (backend) 
 
 ---
 
@@ -18,7 +18,7 @@ A full-stack application that modernizes warehouse operations by integrating wit
 - **Backend:** Node.js, TypeScript, Express, QuickBooks API, Prisma  
 - **Frontend:** React, react-signature-canvas, Axios  
 - **Database:** PostgreSQL  
-- **Deployment:** Vercel (frontend), Render/Heroku (backend), Supabase (database)  
+  
 
 ---
 
